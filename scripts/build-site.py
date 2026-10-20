@@ -116,11 +116,6 @@ T = {
     ),
 }
 
-MOCK = {
-    'tr': dict(a='Kartallar', b='Kaplanlar', q='Çita saatte yaklaşık kaç km hıza ulaşır?', turn='Kartallar · sıra sende', unit='km/sa', dec=','),
-    'en': dict(a='Eagles', b='Tigers', q='How fast can a cheetah run, in km/h?', turn='Eagles · your turn', unit='km/h', dec='.'),
-    'es': dict(a='Águilas', b='Tigres', q='¿A cuántos km/h corre un guepardo?', turn='Águilas · tu turno', unit='km/h', dec=','),
-}
 
 def ico(path, color='currentColor'):
     return f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{path}</svg>'
@@ -192,23 +187,15 @@ def page():
 </header>
 '''
 
-    m = lambda l, k: MOCK[l][k]
-    phone = f'''    <div class="phone" aria-hidden="true">
+    status_bar = '<div class="capture-status" aria-hidden="true"><span>09:41</span><svg viewBox="0 0 64 16" fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/><path d="M23 5a13 13 0 0 1 18 0l-2 2a10 10 0 0 0-14 0zm4 4a7 7 0 0 1 10 0l-2 2a4 4 0 0 0-6 0zm4 4a2 2 0 0 1 2 0l-1 2z"/><rect x="46" y="2" width="15" height="12" rx="3" fill="none" stroke="currentColor"/><rect x="48" y="4" width="11" height="8" rx="1"/><path d="M63 6v4" stroke="currentColor" stroke-width="2"/></svg></div>'
+    phone = f'''    <div class="phone hero-phone" aria-hidden="true">
       <div class="blob a"></div><div class="blob b"></div>
       <div class="frame">
         <div class="btn mute"></div><div class="btn vol1"></div><div class="btn vol2"></div><div class="btn power"></div>
         <div class="screen">
           <div class="island"></div>
-          <div class="mock-score">
-            <div class="side t">{''.join(f'<span data-lang="{l}">{m(l,"a")}</span>' for l in LANGS)}<b>2</b></div>
-            <div class="round">4<span>/10</span></div>
-            <div class="side l">{''.join(f'<span data-lang="{l}">{m(l,"b")}</span>' for l in LANGS)}<b>1</b></div>
-          </div>
-          <div class="mock-q">{''.join(f'<span data-lang="{l}">{m(l,"q")}</span>' for l in LANGS)}</div>
-          <div class="mock-turn"><span class="on">{''.join(f'<span data-lang="{l}">{m(l,"turn")}</span>' for l in LANGS)}</span><span>{''.join(f'<span data-lang="{l}">{m(l,"b")}</span>' for l in LANGS)}</span></div>
-          <div class="mock-num">95<small>{''.join(f'<span data-lang="{l}">{m(l,"unit")}</span>' for l in LANGS)}</small></div>
-          <div class="mock-bar"></div>
-          <div class="mock-pad"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span class="m">{''.join(f'<span data-lang="{l}">{m(l,"dec")}</span>' for l in LANGS)}</span><span>0</span><span class="m">±</span></div>
+          {''.join(f'<img data-lang="{l}" class="shot" src="assets/how-guess-{l}.webp" alt="" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)}
+          {status_bar}
         </div>
       </div>
     </div>
@@ -245,7 +232,7 @@ def page():
         stage = ['setup', 'guess', 'answer'][i]
         how += ''.join(f'<img data-lang="{l}" class="shot" src="assets/how-{stage}-{l}.webp" alt="{html.escape(T[l]["steps"][i][0], quote=True)}" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)
         # A consistent presentation status bar masks the device's live clock and indicators.
-        how += '<div class="capture-status" aria-hidden="true"><span>09:41</span><svg viewBox="0 0 64 16" fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/><path d="M23 5a13 13 0 0 1 18 0l-2 2a10 10 0 0 0-14 0zm4 4a7 7 0 0 1 10 0l-2 2a4 4 0 0 0-6 0zm4 4a2 2 0 0 1 2 0l-1 2z"/><rect x="46" y="2" width="15" height="12" rx="3" fill="none" stroke="currentColor"/><rect x="48" y="4" width="11" height="8" rx="1"/><path d="M63 6v4" stroke="currentColor" stroke-width="2"/></svg></div>'
+        how += status_bar
         how += '</div></div></div></div>\n'
     how += '    </div>\n  </section>\n'
 
