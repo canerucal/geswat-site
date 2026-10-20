@@ -181,9 +181,8 @@ h3.sub { font-size: 20px; margin: 32px 0 12px; }
   .hero p { margin-left: auto; margin-right: auto; }
   .cta-row { justify-content: center; }
   .phone { width: 270px; }
+  .hero-phone .blob.a { top: 0; }
   .island { width: 80px; height: 24px; top: 12px; }
-  .mock-q { font-size: 16px; margin: 24px 0; }
-  .mock-num { font-size: 38px; }
   .features, .steps, .legal-grid { grid-template-columns: 1fr; }
   .contact { grid-template-columns: 1fr; padding: 22px; }
   .block { padding: 40px 0; }
