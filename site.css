@@ -167,19 +167,22 @@ h3.sub { font-size: 20px; margin: 32px 0 12px; }
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
   html { scroll-padding-top: 84px; }
-  .topbar { top: 10px; padding: 0 10px; }
-  .pill { width: 100%; justify-content: space-between; padding: 6px 6px 6px 10px; gap: 4px; }
+  body { overflow-x: clip; }
+  .topbar { top: 10px; left: 16px; right: auto; width: calc(100vw - 32px); padding: 0; }
+  .pill { width: 100%; min-width: 0; justify-content: space-between; padding: 6px 6px 6px 10px; gap: 4px; }
   .brand span { display: none; }
-  .brand { padding-right: 2px; }
+  .brand { flex: none; padding-right: 0; }
   .nav { flex: 1; min-width: 0; justify-content: center; gap: 0; overflow: hidden; }
   .store { flex: none; }
   .nav a[data-section="top"] { display: none; }
-  .nav a { height: 40px; padding: 0 8px; font-size: 13px; }
+  .nav a { flex: 1; min-width: 0; height: 40px; padding: 0 5px; font-size: 12px; line-height: 1.2; white-space: normal; text-align: center; justify-content: center; }
   .store span { display: none; }
-  .store { padding: 0 12px; height: 40px; }
+  .store { width: 36px; padding: 0; margin-left: 0; height: 36px; justify-content: center; }
   .hero { grid-template-columns: 1fr; padding: 96px 0 24px; gap: 28px; text-align: center; }
   .hero p { margin-left: auto; margin-right: auto; }
-  .cta-row { justify-content: center; }
+  .cta-row { flex-direction: column; align-items: stretch; width: 100%; max-width: 360px; margin: 0 auto; }
+  .cta-row .cta { width: 100%; min-height: 58px; height: auto; padding: 14px 18px; justify-content: center; white-space: normal; }
+  .cta-row .cta svg { flex: none; }
   .phone { width: 270px; }
   .hero-phone .blob.a { top: 0; }
   .island { width: 80px; height: 24px; top: 12px; }
