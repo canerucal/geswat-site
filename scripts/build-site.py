@@ -19,7 +19,7 @@ def legal(lang, key):
 
 T = {
     'tr': dict(
-        title='geswat · Bilmesen de olur, tahmin et', desc='geswat: iki takım, bir soru, en yakın tahmin kazanır. Çevrimdışı iPhone parti oyunu.',
+        title='Geswat', desc='geswat: iki takım, bir soru, en yakın tahmin kazanır. Çevrimdışı iPhone parti oyunu.',
         nav_home='Oyun', nav_how='Nasıl oynanır', nav_support='Destek', nav_privacy='Gizlilik', store='App Store',
         h1a='Bilmesen de olur.', h1b='Tahmin et.',
         lead='İki takım, tek telefon, bir soru. Cevap bir sayı; doğruya en yakın tahmin puanı alır. İnternet gerekmez.',
@@ -51,7 +51,7 @@ T = {
         eyebrow_how='OYUN', eyebrow_support='YARDIM', eyebrow_privacy='VERİ', eyebrow_terms='KURALLAR', updated='Son güncelleme: 20 Ekim 2026', lang_label='Dil', foot_support='Destek', foot_privacy='Gizlilik', foot_terms='Koşullar',
     ),
     'en': dict(
-        title='geswat · No clue. Just guess.', desc='geswat is an offline two-team number-guessing party game for iPhone.',
+        title='Geswat', desc='geswat is an offline two-team number-guessing party game for iPhone.',
         nav_home='Game', nav_how='How to play', nav_support='Support', nav_privacy='Privacy', store='App Store',
         h1a='No clue.', h1b='Just guess.',
         lead='Two teams, one phone, one question. Every answer is a number; the closest guess scores. No internet needed.',
@@ -83,7 +83,7 @@ T = {
         eyebrow_how='THE GAME', eyebrow_support='HELP', eyebrow_privacy='DATA', eyebrow_terms='RULES', updated='Last updated: 20 October 2026', lang_label='Language', foot_support='Support', foot_privacy='Privacy', foot_terms='Terms',
     ),
     'es': dict(
-        title='geswat · Ni idea. Adivina.', desc='geswat es un juego de fiesta sin conexión para iPhone: dos equipos, una pregunta, gana la estimación más cercana.',
+        title='Geswat', desc='geswat es un juego de fiesta sin conexión para iPhone: dos equipos, una pregunta, gana la estimación más cercana.',
         nav_home='Juego', nav_how='Cómo se juega', nav_support='Soporte', nav_privacy='Privacidad', store='App Store',
         h1a='Ni idea.', h1b='Adivina.',
         lead='Dos equipos, un teléfono, una pregunta. Cada respuesta es un número; gana la estimación más cercana. Sin internet.',
@@ -175,14 +175,13 @@ def page():
 
     nav = f'''<header class="topbar">
   <div class="pill">
-    <a class="brand" href="#top" aria-label="geswat"><img src="assets/icon-512.png" alt="" width="30" height="30"><span>geswat</span></a>
+    <a class="brand" href="#top" aria-label="Geswat"><img src="assets/icon-512.png" alt="" width="30" height="30"><span>Geswat</span></a>
     <nav class="nav" aria-label="Site">
       <a href="#top" data-section="top">{tri('nav_home')}</a>
       <a href="#how" data-section="how">{tri('nav_how')}</a>
       <a href="#support" data-section="support">{tri('nav_support')}</a>
       <a href="#privacy" data-section="privacy">{tri('nav_privacy')}</a>
     </nav>
-    <a class="store" href="#" aria-disabled="true">{ICONS['apple']}<span>App Store</span></a>
   </div>
 </header>
 '''
@@ -194,7 +193,7 @@ def page():
         <div class="btn mute"></div><div class="btn vol1"></div><div class="btn vol2"></div><div class="btn power"></div>
         <div class="screen">
           <div class="island"></div>
-          {''.join(f'<img data-lang="{l}" class="shot" src="assets/how-guess-{l}.webp" alt="" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)}
+          {''.join(f'<img data-lang="{l}" class="shot" src="assets/hero-result-{l}.webp" alt="" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)}
           {status_bar}
         </div>
       </div>
@@ -230,7 +229,7 @@ def page():
         how += '<span class="btn mute"></span><span class="btn vol1"></span><span class="btn vol2"></span><span class="btn power"></span>'
         how += '<div class="screen"><div class="island" aria-hidden="true"></div>'
         stage = ['setup', 'guess', 'answer'][i]
-        how += ''.join(f'<img data-lang="{l}" class="shot" src="assets/how-{stage}-{l}.webp" alt="{html.escape(T[l]["steps"][i][0], quote=True)}" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)
+        how += ''.join(f'<img data-lang="{l}" class="shot" src="assets/how-{stage}-{l}.webp?v=20261020-2" alt="{html.escape(T[l]["steps"][i][0], quote=True)}" width="1170" height="2532" loading="eager" decoding="async">' for l in LANGS)
         # A consistent presentation status bar masks the device's live clock and indicators.
         how += status_bar
         how += '</div></div></div></div>\n'
@@ -281,7 +280,7 @@ def redirect(target, title):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>geswat · {title}</title>
+<title>Geswat</title>
 <meta http-equiv="refresh" content="0; url=index.html#{target}">
 <link rel="canonical" href="index.html#{target}">
 <script>location.replace('index.html' + location.search + '#{target}');</script>
