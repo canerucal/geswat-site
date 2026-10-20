@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>geswat · No clue. Just guess.</title>
+<title data-lang="tr">geswat · Bilmesen de olur, tahmin et</title>
+<title data-lang="en">geswat · No clue. Just guess.</title>
+<title data-lang="es">geswat · Ni idea. Adivina.</title>
+<meta name="description" content="geswat is an offline two-team number-guessing party game for iPhone.">
+<meta name="description" data-lang="tr" content="geswat: iki takım, bir soru, en yakın tahmin kazanır. Çevrimdışı iPhone parti oyunu.">
+<meta name="description" data-lang="en" content="geswat is an offline two-team number-guessing party game for iPhone.">
+<meta name="description" data-lang="es" content="geswat es un juego de fiesta sin conexión para iPhone: dos equipos, una pregunta, gana la estimación más cercana.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="pill">
+    <a class="brand" href="#top" aria-label="geswat"><img src="assets/icon-512.png" alt="" width="30" height="30"><span>geswat</span></a>
+    <nav class="nav" aria-label="Site">
+      <a href="#top" data-section="top"><span data-lang="tr">Oyun</span><span data-lang="en">Game</span><span data-lang="es">Juego</span></a>
+      <a href="#how" data-section="how"><span data-lang="tr">Nasıl oynanır</span><span data-lang="en">How to play</span><span data-lang="es">Cómo se juega</span></a>
+      <a href="#support" data-section="support"><span data-lang="tr">Destek</span><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a>
+      <a href="#privacy" data-section="privacy"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+    </nav>
+    <a class="store" href="#" aria-disabled="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.1zM14 5.1c.7-.9 1.2-2.1 1-3.3-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.2 1.2.1 2.3-.6 3.1-1.5z"></path></svg><span>App Store</span></a>
+  </div>
+</header>
+<main id="top" class="wrap">
+  <section class="hero">
+    <div class="hero-text">
+      <div data-lang="tr"><h1>Bilmesen de olur.<br><em>Tahmin et.</em></h1><p>İki takım, tek telefon, bir soru. Cevap bir sayı; doğruya en yakın tahmin puanı alır. İnternet gerekmez.</p></div><div data-lang="en"><h1>No clue.<br><em>Just guess.</em></h1><p>Two teams, one phone, one question. Every answer is a number; the closest guess scores. No internet needed.</p></div><div data-lang="es"><h1>Ni idea.<br><em>Adivina.</em></h1><p>Dos equipos, un teléfono, una pregunta. Cada respuesta es un número; gana la estimación más cercana. Sin internet.</p></div>
+      <div class="cta-row">
+        <a class="cta" href="#" aria-disabled="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.8 3-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.1zM14 5.1c.7-.9 1.2-2.1 1-3.3-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.2 1.2.1 2.3-.6 3.1-1.5z"></path></svg><span data-lang="tr">App Store’da yakında</span><span data-lang="en">Coming soon on the App Store</span><span data-lang="es">Pronto en el App Store</span></a>
+        <a class="cta ghost" href="#how"><span data-lang="tr">Nasıl oynanır?</span><span data-lang="en">How to play</span><span data-lang="es">¿Cómo se juega?</span></a>
+      </div>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="blob a"></div><div class="blob b"></div>
+      <div class="frame">
+        <div class="btn mute"></div><div class="btn vol1"></div><div class="btn vol2"></div><div class="btn power"></div>
+        <div class="screen">
+          <div class="island"></div>
+          <div class="mock-score">
+            <div class="side t"><span data-lang="tr">Kartallar</span><span data-lang="en">Eagles</span><span data-lang="es">Águilas</span><b>2</b></div>
+            <div class="round">4<span>/10</span></div>
+            <div class="side l"><span data-lang="tr">Kaplanlar</span><span data-lang="en">Tigers</span><span data-lang="es">Tigres</span><b>1</b></div>
+          </div>
+          <div class="mock-q"><span data-lang="tr">Çita saatte yaklaşık kaç km hıza ulaşır?</span><span data-lang="en">How fast can a cheetah run, in km/h?</span><span data-lang="es">¿A cuántos km/h corre un guepardo?</span></div>
+          <div class="mock-turn"><span class="on"><span data-lang="tr">Kartallar · sıra sende</span><span data-lang="en">Eagles · your turn</span><span data-lang="es">Águilas · tu turno</span></span><span><span data-lang="tr">Kaplanlar</span><span data-lang="en">Tigers</span><span data-lang="es">Tigres</span></span></div>
+          <div class="mock-num">95<small><span data-lang="tr">km/sa</span><span data-lang="en">km/h</span><span data-lang="es">km/h</span></small></div>
+          <div class="mock-bar"></div>
+          <div class="mock-pad"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span class="m"><span data-lang="tr">,</span><span data-lang="en">.</span><span data-lang="es">,</span></span><span>0</span><span class="m">±</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="card"><div class="ic t"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8652B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 15c2.8 0 5 2 5 5"></path></svg></div><div data-lang="tr"><h3>Tek telefon, iki takım</h3><p>Telefonu elden ele verin. Her takım yalnızca kendi tahminini görür; cevap açılınca ikisi de ortaya çıkar.</p></div><div data-lang="en"><h3>One phone, two teams</h3><p>Pass the phone around. Each team only sees its own guess until the answer is revealed.</p></div><div data-lang="es"><h3>Un teléfono, dos equipos</h3><p>Pásense el teléfono. Cada equipo ve solo su estimación hasta que se revela la respuesta.</p></div></div>
+    <div class="card"><div class="ic l"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C5CE0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M8 8v8M16 8v8"></path><circle cx="12" cy="12" r="2.5" fill="#7C5CE0"></circle></svg></div><div data-lang="tr"><h3>Sayı doğrusunda cevap</h3><p>Doğru cevap ve iki tahmin aynı çizgide. Kim daha yakın, neden kazandı: bir bakışta.</p></div><div data-lang="en"><h3>Answers on a number line</h3><p>The correct answer and both guesses on one line. Who was closer, and why, at a glance.</p></div><div data-lang="es"><h3>La respuesta en una recta</h3><p>La respuesta correcta y las dos estimaciones en la misma línea. Quién estuvo más cerca, de un vistazo.</p></div></div>
+    <div class="card"><div class="ic s"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A7A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.3l6.1-.7z"></path></svg></div><div data-lang="tr"><h3>Her dilde kendi soruları</h3><p>Doğa, bilim, tarih, coğrafya, spor, kültür, teknoloji, insan vücudu. Türkçe, İngilizce ve İspanyolca’da yerel sorular.</p></div><div data-lang="en"><h3>Local questions in every language</h3><p>Nature, science, history, geography, sports, culture, technology, the human body. Native questions in English, Turkish and Spanish.</p></div><div data-lang="es"><h3>Preguntas locales en cada idioma</h3><p>Naturaleza, ciencia, historia, geografía, deportes, cultura, tecnología y cuerpo humano. Preguntas propias en español, inglés y turco.</p></div></div>
+  </section>
+  <section id="how" class="block">
+    <span data-lang="tr" class="eyebrow">OYUN</span><span data-lang="en" class="eyebrow">THE GAME</span><span data-lang="es" class="eyebrow">EL JUEGO</span>
+    <h2 class="section"><span data-lang="tr">Nasıl oynanır?</span><span data-lang="en">How to play</span><span data-lang="es">¿Cómo se juega?</span></h2>
+    <div class="steps">
+      <div class="step"><div class="step-copy"><div class="n">1</div><div><div data-lang="tr"><h3>Takımları kur</h3><p>İsimleri yazın, soru sayısını seçin: 5, 10 ya da 20.</p></div><div data-lang="en"><h3>Set up the teams</h3><p>Type your names and pick 5, 10 or 20 questions.</p></div><div data-lang="es"><h3>Formen los equipos</h3><p>Escriban los nombres y elijan 5, 10 o 20 preguntas.</p></div></div></div><div class="phone step-phone"><div class="frame"><span class="btn mute"></span><span class="btn vol1"></span><span class="btn vol2"></span><span class="btn power"></span><div class="screen"><div class="island" aria-hidden="true"></div><img data-lang="tr" class="shot" src="assets/how-setup-tr.webp" alt="Takımları kur" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="en" class="shot" src="assets/how-setup-en.webp" alt="Set up the teams" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="es" class="shot" src="assets/how-setup-es.webp" alt="Formen los equipos" width="1170" height="2532" loading="eager" decoding="async"><div class="capture-status" aria-hidden="true"><span>09:41</span><svg viewBox="0 0 64 16" fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/><path d="M23 5a13 13 0 0 1 18 0l-2 2a10 10 0 0 0-14 0zm4 4a7 7 0 0 1 10 0l-2 2a4 4 0 0 0-6 0zm4 4a2 2 0 0 1 2 0l-1 2z"/><rect x="46" y="2" width="15" height="12" rx="3" fill="none" stroke="currentColor"/><rect x="48" y="4" width="11" height="8" rx="1"/><path d="M63 6v4" stroke="currentColor" stroke-width="2"/></svg></div></div></div></div></div>
+      <div class="step"><div class="step-copy"><div class="n">2</div><div><div data-lang="tr"><h3>Tahmin edin</h3><p>Soru bir sayı ister. İki takım da sırayla tahminini girer.</p></div><div data-lang="en"><h3>Make your guesses</h3><p>Every question asks for a number. Both teams enter a guess in turn.</p></div><div data-lang="es"><h3>Hagan su estimación</h3><p>Cada pregunta pide un número. Los dos equipos escriben su estimación por turnos.</p></div></div></div><div class="phone step-phone"><div class="frame"><span class="btn mute"></span><span class="btn vol1"></span><span class="btn vol2"></span><span class="btn power"></span><div class="screen"><div class="island" aria-hidden="true"></div><img data-lang="tr" class="shot" src="assets/how-guess-tr.webp" alt="Tahmin edin" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="en" class="shot" src="assets/how-guess-en.webp" alt="Make your guesses" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="es" class="shot" src="assets/how-guess-es.webp" alt="Hagan su estimación" width="1170" height="2532" loading="eager" decoding="async"><div class="capture-status" aria-hidden="true"><span>09:41</span><svg viewBox="0 0 64 16" fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/><path d="M23 5a13 13 0 0 1 18 0l-2 2a10 10 0 0 0-14 0zm4 4a7 7 0 0 1 10 0l-2 2a4 4 0 0 0-6 0zm4 4a2 2 0 0 1 2 0l-1 2z"/><rect x="46" y="2" width="15" height="12" rx="3" fill="none" stroke="currentColor"/><rect x="48" y="4" width="11" height="8" rx="1"/><path d="M63 6v4" stroke="currentColor" stroke-width="2"/></svg></div></div></div></div></div>
+      <div class="step"><div class="step-copy"><div class="n">3</div><div><div data-lang="tr"><h3>En yakın kazanır</h3><p>Doğru cevaba en yakın takım 1 puan alır. Eşit uzaklıkta ikisi de alır.</p></div><div data-lang="en"><h3>Closest wins</h3><p>The team closest to the answer scores 1 point. Equal distance? Both score.</p></div><div data-lang="es"><h3>Gana el más cercano</h3><p>El equipo más cercano a la respuesta suma 1 punto. A igual distancia, suman los dos.</p></div></div></div><div class="phone step-phone"><div class="frame"><span class="btn mute"></span><span class="btn vol1"></span><span class="btn vol2"></span><span class="btn power"></span><div class="screen"><div class="island" aria-hidden="true"></div><img data-lang="tr" class="shot" src="assets/how-answer-tr.webp" alt="En yakın kazanır" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="en" class="shot" src="assets/how-answer-en.webp" alt="Closest wins" width="1170" height="2532" loading="eager" decoding="async"><img data-lang="es" class="shot" src="assets/how-answer-es.webp" alt="Gana el más cercano" width="1170" height="2532" loading="eager" decoding="async"><div class="capture-status" aria-hidden="true"><span>09:41</span><svg viewBox="0 0 64 16" fill="currentColor"><rect x="0" y="10" width="3" height="5" rx="1"/><rect x="5" y="7" width="3" height="8" rx="1"/><rect x="10" y="4" width="3" height="11" rx="1"/><rect x="15" y="1" width="3" height="14" rx="1"/><path d="M23 5a13 13 0 0 1 18 0l-2 2a10 10 0 0 0-14 0zm4 4a7 7 0 0 1 10 0l-2 2a4 4 0 0 0-6 0zm4 4a2 2 0 0 1 2 0l-1 2z"/><rect x="46" y="2" width="15" height="12" rx="3" fill="none" stroke="currentColor"/><rect x="48" y="4" width="11" height="8" rx="1"/><path d="M63 6v4" stroke="currentColor" stroke-width="2"/></svg></div></div></div></div></div>
+    </div>
+  </section>
+  <section id="support" class="block">
+    <span data-lang="tr" class="eyebrow">YARDIM</span><span data-lang="en" class="eyebrow">HELP</span><span data-lang="es" class="eyebrow">AYUDA</span>
+    <div data-lang="tr"><h2 class="section">Destek</h2><p class="lead">Takıldığın bir şey mi var? Önce sık sorulanlara bak; bulamazsan bize yaz, en kısa sürede dönelim.</p></div>
+    <div data-lang="en"><h2 class="section">Support</h2><p class="lead">Stuck on something? Check the FAQ first; if that doesn't help, write to us and we'll get back to you.</p></div>
+    <div data-lang="es"><h2 class="section">Soporte</h2><p class="lead">¿Algo no funciona? Mira primero las preguntas frecuentes; si no encuentras la respuesta, escríbenos.</p></div>
+    <div class="contact">
+      <div class="contact-main">
+        <div class="contact-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD45C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div>
+        <div data-lang="tr"><h3>Bize ulaş</h3><p>Destek, öneri ve hata bildirimleri için bize yaz. Butonlar kendi e‑posta uygulamanı açar.</p></div>
+        <div data-lang="en"><h3>Contact us</h3><p>Write to us for support, suggestions and bug reports. The buttons open your own mail app.</p></div>
+        <div data-lang="es"><h3>Contáctanos</h3><p>Escríbenos para soporte, sugerencias y errores. Los botones abren tu propia app de correo.</p></div>
+      </div>
+      <div class="contact-actions">
+        <div class="cta-col">
+          <a class="cta" data-lang="tr" href="mailto:hello@brocan.co?subject=geswat%20destek">Destek e‑postası yaz</a>
+          <a class="cta dark" data-lang="tr" href="mailto:hello@brocan.co?subject=geswat%20hata%20bildirimi&body=Ne%20oldu%3F%0A%0A%0ANas%C4%B1l%20tekrar%20edebiliriz%3F%0A1.%0A2.%0A3.%0A%0A---%0AiPhone%20modeli%3A%20%0AiOS%20s%C3%BCr%C3%BCm%C3%BC%3A%20%0Ageswat%20s%C3%BCr%C3%BCm%C3%BC%3A%20%0ADil%3A%20">Hata bildir</a>
+          <a class="cta" data-lang="en" href="mailto:hello@brocan.co?subject=geswat%20support">Email support</a>
+          <a class="cta dark" data-lang="en" href="mailto:hello@brocan.co?subject=geswat%20bug%20report&body=What%20happened%3F%0A%0A%0AHow%20can%20we%20reproduce%20it%3F%0A1.%0A2.%0A3.%0A%0A---%0AiPhone%20model%3A%20%0AiOS%20version%3A%20%0Ageswat%20version%3A%20%0ALanguage%3A%20">Report a bug</a>
+          <a class="cta" data-lang="es" href="mailto:hello@brocan.co?subject=geswat%20soporte">Escribir a soporte</a>
+          <a class="cta dark" data-lang="es" href="mailto:hello@brocan.co?subject=geswat%20informe%20de%20error&body=%C2%BFQu%C3%A9%20pas%C3%B3%3F%0A%0A%0A%C2%BFC%C3%B3mo%20lo%20reproducimos%3F%0A1.%0A2.%0A3.%0A%0A---%0AModelo%20de%20iPhone%3A%20%0AVersi%C3%B3n%20de%20iOS%3A%20%0AVersi%C3%B3n%20de%20geswat%3A%20%0AIdioma%3A%20">Informar un error</a>
+        </div>
+        <p class="meta" data-lang="tr">Hata bildirirken iPhone modelini, iOS sürümünü ve geswat sürümünü eklersen daha hızlı çözeriz.</p><p class="meta" data-lang="en">Please include your iPhone model, iOS version and geswat version so we can fix it faster.</p><p class="meta" data-lang="es">Incluye el modelo de iPhone, la versión de iOS y la de geswat para que lo resolvamos antes.</p>
+      </div>
+    </div>
+    <div class="faq panel">
+      <h3 class="sub"><span data-lang="tr">Sık sorulanlar</span><span data-lang="en">FAQ</span><span data-lang="es">Preguntas frecuentes</span></h3>
+        <div data-lang="tr">
+          <details><summary>Oyun nasıl oynanır?</summary><p>İki takım aynı telefonda oynar. Her soru sayısal bir cevap ister; iki takım da sırayla tahminini girer, sonra “Cevabı Göster”e dokunulur. Doğru cevaba en yakın takım 1 puan alır; eşit uzaklıkta ikisi de alır. Oyun sonunda puanı yüksek olan kazanır.</p></details>
+          <details><summary>İnternet gerekiyor mu?</summary><p>Hayır. Sorular uygulamanın içindedir; oyun tamamen çevrimdışı çalışır.</p></details>
+          <details><summary>Dili nasıl değiştiririm?</summary><p>Ayarlar → Dil. “Otomatik” cihaz dilini kullanır (Türkçe, İngilizce veya İspanyolca; diğer dillerde İngilizce). Dil değişince yeni oyunlar o dilin soru havuzundan gelir; her dilin kendi yerel soruları vardır.</p></details>
+          <details><summary>Yarım kalan oyunu nasıl sürdürürüm?</summary><p>Ana ekranda “Oyuna Devam Et” kartına dokun. Yeni oyun başlatmak önceki oyunun yerine geçer.</p></details>
+          <details><summary>Ondalıklı veya negatif sayı girebilir miyim?</summary><p>Evet. Tuş takımındaki virgül (İngilizcede nokta) ondalık, ± tuşu işaret içindir.</p></details>
+          <details><summary>Bir cevap yanlış görünüyor.</summary><p>Bazı cevaplar yaklaşık değerlerdir ve kaynağa göre değişebilir. Yine de hatalı olduğunu düşündüğün soruyu “Hata bildir” ile gönder; soru metnini yazman yeterli.</p></details>
+          <details><summary>Verilerim nerede?</summary><p>Hepsi cihazında: takım adları, tercihler, devam eden oyun. Sunucuya hiçbir şey gönderilmez. Ayrıntı için aşağıdaki Gizlilik bölümüne bak.</p></details>
+        </div>
+        <div data-lang="en">
+          <details><summary>How do I play?</summary><p>Two teams share one phone. Every question asks for a number; both teams enter a guess in turn, then tap “Reveal Answer”. The team closest to the correct answer scores 1 point; at equal distance both score. Most points at the end wins.</p></details>
+          <details><summary>Do I need internet?</summary><p>No. Questions ship inside the app; the game is fully offline.</p></details>
+          <details><summary>How do I change the language?</summary><p>Settings → Language. “Automatic” follows your device language (Turkish, English or Spanish; other languages fall back to English). New games draw from that language’s question bank, which includes its own local questions.</p></details>
+          <details><summary>How do I resume an unfinished game?</summary><p>Tap the “Resume Game” card on the home screen. Starting a new game replaces the previous one.</p></details>
+          <details><summary>Can I enter decimals or negative numbers?</summary><p>Yes. The keypad’s decimal key and the ± key handle both.</p></details>
+          <details><summary>An answer looks wrong.</summary><p>Some answers are approximate and vary by source. If you think one is wrong, send it with “Report a bug”; the question text is enough.</p></details>
+          <details><summary>Where is my data?</summary><p>All on your device: team names, preferences, the game in progress. Nothing is sent to a server. See the Privacy section below.</p></details>
+        </div>
+        <div data-lang="es">
+          <details><summary>¿Cómo se juega?</summary><p>Dos equipos comparten un teléfono. Cada pregunta pide un número; los dos equipos escriben su estimación por turnos y luego tocan “Mostrar respuesta”. El equipo más cercano suma 1 punto; a igual distancia, suman los dos. Al final gana quien tenga más puntos.</p></details>
+          <details><summary>¿Necesito internet?</summary><p>No. Las preguntas están dentro de la app; el juego funciona sin conexión.</p></details>
+          <details><summary>¿Cómo cambio el idioma?</summary><p>Ajustes → Idioma. “Automático” sigue el idioma del dispositivo (turco, inglés o español; otros idiomas usan inglés). Las partidas nuevas usan el banco de preguntas de ese idioma, con sus propias preguntas locales.</p></details>
+          <details><summary>¿Cómo continúo una partida?</summary><p>Toca la tarjeta “Continuar partida” en la pantalla principal. Empezar una partida nueva reemplaza la anterior.</p></details>
+          <details><summary>¿Puedo escribir decimales o negativos?</summary><p>Sí. La tecla de coma del teclado numérico y la tecla ± sirven para eso.</p></details>
+          <details><summary>Una respuesta parece incorrecta.</summary><p>Algunas respuestas son aproximadas y varían según la fuente. Si crees que una está mal, envíala con “Informar un error”; basta con el texto de la pregunta.</p></details>
+          <details><summary>¿Dónde están mis datos?</summary><p>Todo en tu dispositivo: nombres de equipos, preferencias y la partida en curso. No se envía nada a un servidor. Consulta la sección de Privacidad más abajo.</p></details>
+        </div>
+    </div>
+  </section>
+  <section id="privacy" class="block legal">
+      <div data-lang="tr">
+        <span class="eyebrow">VERİ</span>
+        <h2 class="section">Gizlilik Politikası</h2>
+        <p class="lead">geswat hesap istemez, veri toplamaz ve sunucuya hiçbir şey göndermez. Aşağıda cihazında ne tutulduğu anlatılıyor.</p>
+        <span class="chip">Son güncelleme: 20 Ekim 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h3>Cihazında kalan bilgiler</h3><p>Geswat, hesap oluşturmadan oynanan bir tahmin oyunudur. Takım isimleri, soru sayısı, devam eden oyun ve tahminler, daha önce seçilen sorular, dil ve titreşim tercihi cihazında saklanır. Bu bilgiler oyunu sürdürmek, tercihlerini hatırlamak ve soru tekrarlarını azaltmak için kullanılır.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c5-4.5 13-4.5 18 0M6.5 12.5c3-2.5 8-2.5 11 0M10 16c1.2-1 2.8-1 4 0"></path><path d="M3 3l18 18"></path></svg></div><h3>Çevrimdışı oyun</h3><p>Sorular uygulamanın içindedir; oynamak için internet bağlantısı gerekmez. Mevcut oyun sürümünde reklam, hesap sistemi veya uygulama içi analiz hizmeti bulunmaz. Oyun kayıtlarını bir sunucuya göndermeyiz.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"></path></svg></div><h3>Saklama ve silme</h3><p>Yeni oyun başladığında önceki oyun kaydı değiştirilir. Takım isimleri ve tercihlerin sonraki oyunlar için hatırlanır. Uygulamayı cihazından sildiğinde uygulamanın yerel verileri de kaldırılır. İşletim sisteminin yedekleme ve geri yükleme özellikleri, cihaz ayarlarına bağlı olarak bu verileri kapsayabilir.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg></div><h3>Cihaz ve platform hizmetleri</h3><p>Apple’ın işletim sistemi, App Store ve isteğe bağlı tanılama hizmetleri kendi gizlilik uygulamalarına tabidir. Bu metin Geswat’ın oyun içindeki veri kullanımını açıklar.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>İletişim</h3><p>Sorular için: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+      <div data-lang="en">
+        <span class="eyebrow">DATA</span>
+        <h2 class="section">Privacy Policy</h2>
+        <p class="lead">geswat needs no account, collects no data and sends nothing to a server. Here is what stays on your device.</p>
+        <span class="chip">Last updated: 20 October 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h3>What stays on your device</h3><p>Geswat is a guessing game played without an account. Team names, the number of questions, the game in progress and its guesses, previously shown questions, and your language and haptics preferences are stored on your device. They are used to continue the game, remember your preferences and reduce repeated questions.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c5-4.5 13-4.5 18 0M6.5 12.5c3-2.5 8-2.5 11 0M10 16c1.2-1 2.8-1 4 0"></path><path d="M3 3l18 18"></path></svg></div><h3>Offline play</h3><p>Questions ship inside the app; no internet connection is needed to play. The current version has no ads, no accounts and no in-app analytics. Game data is never sent to a server.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"></path></svg></div><h3>Storage and deletion</h3><p>Starting a new game replaces the previous saved game. Team names and preferences are remembered for later games. Deleting the app removes its local data. Depending on your device settings, operating-system backup and restore features may include this data.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg></div><h3>Device and platform services</h3><p>Apple’s operating system, the App Store and optional diagnostics services are subject to their own privacy practices. This text describes Geswat’s in-game data use only.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>Contact</h3><p>Questions: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+      <div data-lang="es">
+        <span class="eyebrow">DATOS</span>
+        <h2 class="section">Política de privacidad</h2>
+        <p class="lead">geswat no requiere cuenta, no recopila datos y no envía nada a un servidor. Esto es lo que se guarda en tu dispositivo.</p>
+        <span class="chip">Última actualización: 20 de octubre de 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h3>Lo que se queda en tu dispositivo</h3><p>Geswat es un juego de estimaciones que se juega sin cuenta. Los nombres de los equipos, el número de preguntas, la partida en curso y sus estimaciones, las preguntas ya mostradas y tus preferencias de idioma y vibración se guardan en tu dispositivo. Se usan para continuar la partida, recordar tus preferencias y reducir las preguntas repetidas.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c5-4.5 13-4.5 18 0M6.5 12.5c3-2.5 8-2.5 11 0M10 16c1.2-1 2.8-1 4 0"></path><path d="M3 3l18 18"></path></svg></div><h3>Juego sin conexión</h3><p>Las preguntas están dentro de la app; no se necesita internet para jugar. La versión actual no tiene anuncios, cuentas ni análisis dentro de la app. Los datos de la partida nunca se envían a un servidor.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"></path></svg></div><h3>Almacenamiento y borrado</h3><p>Empezar una partida nueva reemplaza la partida guardada anterior. Los nombres de los equipos y las preferencias se recuerdan para las siguientes partidas. Al eliminar la app se eliminan sus datos locales. Según la configuración del dispositivo, las copias de seguridad del sistema pueden incluir estos datos.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg></div><h3>Servicios del dispositivo y la plataforma</h3><p>El sistema operativo de Apple, el App Store y los servicios opcionales de diagnóstico tienen sus propias prácticas de privacidad. Este texto describe solo el uso de datos de Geswat dentro del juego.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>Contacto</h3><p>Preguntas: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+  </section>
+  <section id="terms" class="block legal">
+      <div data-lang="tr">
+        <span class="eyebrow">KURALLAR</span>
+        <h2 class="section">Kullanım Koşulları</h2>
+        <p class="lead">geswat eğlence amaçlı bir tahmin oyunudur. Uygulamayı kullanarak aşağıdaki koşulları kabul etmiş olursun.</p>
+        <span class="chip">Son güncelleme: 20 Ekim 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"></circle></svg></div><h3>Oyun hakkında</h3><p>Geswat eğlence amaçlı bir tahmin oyunudur. İki takım aynı cihazda oynar. Her soruda doğru cevaba en yakın tahmin 1 puan alır; eşit uzaklıkta iki takım da 1 puan alır. Oyun sonunda en yüksek puana sahip takım kazanır; eşit puanlarda oyun berabere biter.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7"></path><circle cx="12" cy="17" r="0.7" fill="currentColor"></circle></svg></div><h3>Sorular ve cevaplar</h3><p>Bazı cevaplar yaklaşık değerlerdir. Bilgiler kullanılan kaynağa, ölçüm yöntemine veya zamana göre farklılık gösterebilir. Puanlama, uygulamada o soru için kayıtlı cevap üzerinden yapılır. Sorular ve açıklamalar profesyonel tavsiye amacı taşımaz.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"></path><path d="M8 4v5h7V4M8 20v-6h8v6"></path></svg></div><h3>Yerel oyun kayıtları</h3><p>Oyun ilerlemesi cihazda tutulur. Yeni oyun başlatmak önceki oyunun yerine geçer. Uygulamanın silinmesi veya cihaz verilerinin kaybı oyun kayıtlarını etkileyebilir.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"></path><path d="M4 7.5l8 4.5 8-4.5M12 12v9"></path></svg></div><h3>Üçüncü taraf bileşenler</h3><p>Uygulamada kullanılan açık kaynak bileşenler ve yazı tipleri kendi lisanslarına tabidir. İlgili bildirimleri Ayarlar → Lisanslar bölümünde okuyabilirsin.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></div><h3>Lisans sözleşmesi</h3><p>Uygulama App Store üzerinden dağıtılır ve Apple’ın standart Son Kullanıcı Lisans Sözleşmesi’ne (EULA) tabidir: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/…/stdeula</a>.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>İletişim</h3><p>Sorular için: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+      <div data-lang="en">
+        <span class="eyebrow">RULES</span>
+        <h2 class="section">Terms of Use</h2>
+        <p class="lead">geswat is a guessing game made for fun. By using the app you agree to the terms below.</p>
+        <span class="chip">Last updated: 20 October 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"></circle></svg></div><h3>About the game</h3><p>Geswat is a guessing game made for fun. Two teams play on the same device. In each question the guess closest to the correct answer earns 1 point; at equal distance both teams earn 1 point. The team with the highest score at the end wins; equal scores mean a tie.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7"></path><circle cx="12" cy="17" r="0.7" fill="currentColor"></circle></svg></div><h3>Questions and answers</h3><p>Some answers are approximate. Figures may vary by source, measurement method or time. Scoring uses the answer stored in the app for that question. Questions and explanations are not professional advice.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"></path><path d="M8 4v5h7V4M8 20v-6h8v6"></path></svg></div><h3>Local game data</h3><p>Game progress is kept on the device. Starting a new game replaces the previous one. Deleting the app or losing device data may affect saved games.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"></path><path d="M4 7.5l8 4.5 8-4.5M12 12v9"></path></svg></div><h3>Third-party components</h3><p>Open-source components and fonts used in the app are subject to their own licenses. You can read the notices under Settings → Licenses.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></div><h3>License agreement</h3><p>The app is distributed through the App Store and is subject to Apple’s standard End User License Agreement (EULA): <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/…/stdeula</a>.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>Contact</h3><p>Questions: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+      <div data-lang="es">
+        <span class="eyebrow">REGLAS</span>
+        <h2 class="section">Términos de uso</h2>
+        <p class="lead">geswat es un juego de estimaciones hecho para divertirse. Al usar la app aceptas los términos siguientes.</p>
+        <span class="chip">Última actualización: 20 de octubre de 2026</span>
+        <div class="legal-grid">
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"></circle><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"></circle><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"></circle></svg></div><h3>Sobre el juego</h3><p>Geswat es un juego de estimaciones hecho para divertirse. Dos equipos juegan en el mismo dispositivo. En cada pregunta, la estimación más cercana a la respuesta correcta suma 1 punto; a igual distancia, los dos equipos suman 1 punto. Al final gana el equipo con más puntos; con puntos iguales, la partida termina en empate.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7"></path><circle cx="12" cy="17" r="0.7" fill="currentColor"></circle></svg></div><h3>Preguntas y respuestas</h3><p>Algunas respuestas son aproximadas. Los datos pueden variar según la fuente, el método de medición o el momento. La puntuación se calcula con la respuesta guardada en la app para esa pregunta. Las preguntas y explicaciones no son asesoramiento profesional.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"></path><path d="M8 4v5h7V4M8 20v-6h8v6"></path></svg></div><h3>Datos locales de la partida</h3><p>El progreso de la partida se guarda en el dispositivo. Empezar una partida nueva reemplaza la anterior. Eliminar la app o perder los datos del dispositivo puede afectar a las partidas guardadas.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"></path><path d="M4 7.5l8 4.5 8-4.5M12 12v9"></path></svg></div><h3>Componentes de terceros</h3><p>Los componentes de código abierto y las fuentes usados en la app tienen sus propias licencias. Puedes leer los avisos en Ajustes → Licencias.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg></div><h3>Acuerdo de licencia</h3><p>La app se distribuye a través del App Store y está sujeta al Acuerdo de licencia de usuario final (EULA) estándar de Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/…/stdeula</a>.</p></div>
+          <div class="lcard"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3 8l9 6 9-6"></path></svg></div><h3>Contacto</h3><p>Preguntas: <a href="mailto:hello@brocan.co">hello@brocan.co</a>.</p></div>
+        </div>
+      </div>
+  </section>
+  <footer class="footer">
+    <div class="foot-left">© 2026 brocan · geswat</div>
+    <div class="foot-links">
+      <a href="#support"><span data-lang="tr">Destek</span><span data-lang="en">Support</span><span data-lang="es">Soporte</span></a>
+      <a href="#privacy"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span><span data-lang="es">Privacidad</span></a>
+      <a href="#terms"><span data-lang="tr">Koşullar</span><span data-lang="en">Terms</span><span data-lang="es">Términos</span></a>
+      <a href="mailto:hello@brocan.co">hello@brocan.co</a>
+    </div>
+    <div class="lang"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg><span class="lang-current">Türkçe</span>
+      <select class="lang-select" aria-label="Language"><option value="tr">Türkçe</option><option value="en">English</option><option value="es">Español</option></select>
+    </div>
+  </footer>
+</main>
+<script src="site.js"></script>
+</body>
+</html>

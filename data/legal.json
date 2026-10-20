@@ -1,0 +1,116 @@
+{
+  "tr": {
+    "privacy": [
+      [
+        "Cihazında kalan bilgiler",
+        "Geswat, hesap oluşturmadan oynanan bir tahmin oyunudur. Takım isimleri, soru sayısı, devam eden oyun ve tahminler, daha önce seçilen sorular, dil ve titreşim tercihi cihazında saklanır. Bu bilgiler oyunu sürdürmek, tercihlerini hatırlamak ve soru tekrarlarını azaltmak için kullanılır."
+      ],
+      [
+        "Çevrimdışı oyun",
+        "Sorular uygulamanın içindedir; oynamak için internet bağlantısı gerekmez. Mevcut oyun sürümünde reklam, hesap sistemi veya uygulama içi analiz hizmeti bulunmaz. Oyun kayıtlarını bir sunucuya göndermeyiz."
+      ],
+      [
+        "Saklama ve silme",
+        "Yeni oyun başladığında önceki oyun kaydı değiştirilir. Takım isimleri ve tercihlerin sonraki oyunlar için hatırlanır. Uygulamayı cihazından sildiğinde uygulamanın yerel verileri de kaldırılır. İşletim sisteminin yedekleme ve geri yükleme özellikleri, cihaz ayarlarına bağlı olarak bu verileri kapsayabilir."
+      ],
+      [
+        "Cihaz ve platform hizmetleri",
+        "Apple’ın işletim sistemi, App Store ve isteğe bağlı tanılama hizmetleri kendi gizlilik uygulamalarına tabidir. Bu metin Geswat’ın oyun içindeki veri kullanımını açıklar."
+      ]
+    ],
+    "terms": [
+      [
+        "Oyun hakkında",
+        "Geswat eğlence amaçlı bir tahmin oyunudur. İki takım aynı cihazda oynar. Her soruda doğru cevaba en yakın tahmin 1 puan alır; eşit uzaklıkta iki takım da 1 puan alır. Oyun sonunda en yüksek puana sahip takım kazanır; eşit puanlarda oyun berabere biter."
+      ],
+      [
+        "Sorular ve cevaplar",
+        "Bazı cevaplar yaklaşık değerlerdir. Bilgiler kullanılan kaynağa, ölçüm yöntemine veya zamana göre farklılık gösterebilir. Puanlama, uygulamada o soru için kayıtlı cevap üzerinden yapılır. Sorular ve açıklamalar profesyonel tavsiye amacı taşımaz."
+      ],
+      [
+        "Yerel oyun kayıtları",
+        "Oyun ilerlemesi cihazda tutulur. Yeni oyun başlatmak önceki oyunun yerine geçer. Uygulamanın silinmesi veya cihaz verilerinin kaybı oyun kayıtlarını etkileyebilir."
+      ],
+      [
+        "Üçüncü taraf bileşenler",
+        "Uygulamada kullanılan açık kaynak bileşenler ve yazı tipleri kendi lisanslarına tabidir. İlgili bildirimleri Ayarlar → Lisanslar bölümünde okuyabilirsin."
+      ]
+    ]
+  },
+  "en": {
+    "privacy": [
+      [
+        "What stays on your device",
+        "Geswat is a guessing game played without an account. Team names, the number of questions, the game in progress and its guesses, previously shown questions, and your language and haptics preferences are stored on your device. They are used to continue the game, remember your preferences and reduce repeated questions."
+      ],
+      [
+        "Offline play",
+        "Questions ship inside the app; no internet connection is needed to play. The current version has no ads, no accounts and no in-app analytics. Game data is never sent to a server."
+      ],
+      [
+        "Storage and deletion",
+        "Starting a new game replaces the previous saved game. Team names and preferences are remembered for later games. Deleting the app removes its local data. Depending on your device settings, operating-system backup and restore features may include this data."
+      ],
+      [
+        "Device and platform services",
+        "Apple’s operating system, the App Store and optional diagnostics services are subject to their own privacy practices. This text describes Geswat’s in-game data use only."
+      ]
+    ],
+    "terms": [
+      [
+        "About the game",
+        "Geswat is a guessing game made for fun. Two teams play on the same device. In each question the guess closest to the correct answer earns 1 point; at equal distance both teams earn 1 point. The team with the highest score at the end wins; equal scores mean a tie."
+      ],
+      [
+        "Questions and answers",
+        "Some answers are approximate. Figures may vary by source, measurement method or time. Scoring uses the answer stored in the app for that question. Questions and explanations are not professional advice."
+      ],
+      [
+        "Local game data",
+        "Game progress is kept on the device. Starting a new game replaces the previous one. Deleting the app or losing device data may affect saved games."
+      ],
+      [
+        "Third-party components",
+        "Open-source components and fonts used in the app are subject to their own licenses. You can read the notices under Settings → Licenses."
+      ]
+    ]
+  },
+  "es": {
+    "privacy": [
+      [
+        "Lo que se queda en tu dispositivo",
+        "Geswat es un juego de estimaciones que se juega sin cuenta. Los nombres de los equipos, el número de preguntas, la partida en curso y sus estimaciones, las preguntas ya mostradas y tus preferencias de idioma y vibración se guardan en tu dispositivo. Se usan para continuar la partida, recordar tus preferencias y reducir las preguntas repetidas."
+      ],
+      [
+        "Juego sin conexión",
+        "Las preguntas están dentro de la app; no se necesita internet para jugar. La versión actual no tiene anuncios, cuentas ni análisis dentro de la app. Los datos de la partida nunca se envían a un servidor."
+      ],
+      [
+        "Almacenamiento y borrado",
+        "Empezar una partida nueva reemplaza la partida guardada anterior. Los nombres de los equipos y las preferencias se recuerdan para las siguientes partidas. Al eliminar la app se eliminan sus datos locales. Según la configuración del dispositivo, las copias de seguridad del sistema pueden incluir estos datos."
+      ],
+      [
+        "Servicios del dispositivo y la plataforma",
+        "El sistema operativo de Apple, el App Store y los servicios opcionales de diagnóstico tienen sus propias prácticas de privacidad. Este texto describe solo el uso de datos de Geswat dentro del juego."
+      ]
+    ],
+    "terms": [
+      [
+        "Sobre el juego",
+        "Geswat es un juego de estimaciones hecho para divertirse. Dos equipos juegan en el mismo dispositivo. En cada pregunta, la estimación más cercana a la respuesta correcta suma 1 punto; a igual distancia, los dos equipos suman 1 punto. Al final gana el equipo con más puntos; con puntos iguales, la partida termina en empate."
+      ],
+      [
+        "Preguntas y respuestas",
+        "Algunas respuestas son aproximadas. Los datos pueden variar según la fuente, el método de medición o el momento. La puntuación se calcula con la respuesta guardada en la app para esa pregunta. Las preguntas y explicaciones no son asesoramiento profesional."
+      ],
+      [
+        "Datos locales de la partida",
+        "El progreso de la partida se guarda en el dispositivo. Empezar una partida nueva reemplaza la anterior. Eliminar la app o perder los datos del dispositivo puede afectar a las partidas guardadas."
+      ],
+      [
+        "Componentes de terceros",
+        "Los componentes de código abierto y las fuentes usados en la app tienen sus propias licencias. Puedes leer los avisos en Ajustes → Licencias."
+      ]
+    ]
+  }
+}
